@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block title %} {{title}} {% endblock %}
+
+{% block header %}
+{% include 'navbar-resume.html' %}
+{% endblock %}
+
+{% block content %}
+
+<div class="resume-container">
+    <section id="about">
+        <div class="section-content">
+            <h1 class="section-title"> Іван Грабівчук </h1>
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Ваше фото" class="profile-photo">
+            <p> Я — початківець у програмуванні з основними знаннями в Python і JavaScript та базовим розумінням роботи з базами даних. 
+                Захоплююся веб-розробкою, люблю вирішувати задачі та швидко вчуся новому. 
+                Шукаю можливість працювати в команді, де зможу застосувати знання на практиці, навчитися більше і приносити користь проєкту.</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="section-content">
+            <h2 class="section-title">Досвід роботи</h2>
+            <ul class="experience-list">
+                <li class="experience-item">
+                    <div>
+                        <h3>Cтудент ПНУ Івано-Фраківськ</h3>
+                        <p class="date">[01.09.2022] - [По теперішній час]</p>
+                    </div>
+                    <ul class="responsibilities">
+                        <li>Участь у групових проектах, дослідженнях, лабораторних роботах. Підготовка та презентація звітів, рефератів, курсових робіт</li>
+                        <li>Виконання завдань, пов’язаних з професійною діяльністю. Допомога в адміністративних та організаційних питаннях.</li>
+                        <li>Участь у студентському самоврядуванні, клубах за інтересами.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2 class="section-title">Освіта</h2>
+            <ul class="education-list">
+                <li class="education-item">
+                    <div>
+                        <h3>Прикарпатський Національний Університет імені В. Стефаника, Бакалавр</h3>
+                        <p class="date">[2022] - [В процесі навчання]</p>
+                    </div>
+                    <p class="specialization">Інженерія Програмного Забезпечення</p>
+                </li>
+                </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2 class="section-title">Навички</h2>
+            <ul class="skills-list">
+                <li>Python</li>
+                <li>Django/Flask</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2 class="section-title">Проєкти</h2>
+            <ul class="projects-list">
+                <li class="project-item">
+                    <h3><a href="#"">Spring project</a></h3>
+                    <p>Cтворення бекенду на фреймворку Spring</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-content">
+            <h2 class="section-title">Контакти</h2>
+            <ul class="contact-info">
+                <li><i class="fas fa-envelope"></i><a href="mailto:ivan.hrabivchuk.22@pnu.edu.ua"> Моя пошта</a></li>
+                <li><i class="fab fa-github"></i><a href="https://github.com/AronWW""> GitHub</a></li>
+            </ul>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block footer %}
+{% include 'footer-resume.html' %}
+{% endblock %}

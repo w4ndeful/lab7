@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+a {
+    color: #DAA520;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c88f1e;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.resume-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.section {
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.section-title::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #DAA520;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px auto 30px auto;
+    display: block;
+    border: 4px solid #DAA520;
+}
+
+/* НАВІГАЦІЯ */
+.navbar {
+    background-color: #f8f8f8; /* Фон такий же, як у body */
+    padding: 0.5rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Додаємо тінь */
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #333; /* Колір тексту логотипу такий же, як у body */
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-link {
+    color: #333; /* Колір посилань такий же, як у body */
+    margin-left: 2rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #DAA520; 
+}
+
+/* ФУТЕР */
+.footer {
+    background-color: #212529;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+.card{
+    margin-right: 40px;
+}
+
+.myclas{
+    border: 2px solid gold;
+    display: flex;
+    justify-content: center;
+}
+
+.card-img{
+    height: 300px;
+}
+
+.publish_date{
+    width: 300px;
+}
+
+.is_active{
+    display: flex;
+    justify-content: left;
+}
+
+.category{
+    width: 300px;
+}

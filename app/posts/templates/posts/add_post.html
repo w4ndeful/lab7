@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Add Post{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('.static', filename='css/posts.css') }}">
+{% endblock %}
+
+{% block content %}
+<br>
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    {% from 'form_macros.html' import render_field %}
+
+    {{ render_field(form.title) }}
+    {{ render_field(form.content) }}
+    {{ render_field(form.category) }}
+    {{ render_field(form.is_active) }}
+    {{ render_field(form.publish_date) }}
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Add Post</button>
+    </div>
+</form>
+<br>
+<a href="{{ url_for('posts.get_posts') }}">Return to posts</a>
+
+{% endblock %}
